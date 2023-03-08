@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Donna Kunkel is an aspiring front end developer.  Learn more about Donna's resume and background." />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+    
     <title>Donna Kunkel</title>
 </head>
 <body>
@@ -17,12 +23,15 @@
         <p class=" hero-text hero-text-strike">Physicist</p>
         <p class=" hero-text hero-text-strike">Environmental Specialist</p>
         <p class="hero-text">Front End Developer</p>
-<ion-icon class="icon-down" name="arrow-dropdown-circle"></ion-icon>
+<ion-icon class="icon-down" name="arrow-dropdown-circle"  ></ion-icon>
     </div>
   
     <div class="hero-img"></div>
-
+    <a href="/Kunkel_CV.pdf" download>
+<button class="hero-CV">Download CV</button>
+</a>
  </section>
+
 
  <section class="section-portfolio">
 
@@ -35,10 +44,11 @@
         </p>
           <a href="https://github.com/donna-ann-kunkel/workout">https://github.com/donna-ann-kunkel/workout</a>
         </div>
-        <div class="portfolio-img-container">
+        <div class="portfolio-img-container" id="workout-img">
             <img class="portfolio-img"src="img/workout.jpg" alt="A screenshot of a workout tracker app created by Donna."/>
         </div>
     </div>
+    <ion-icon class="icon-down2" name="arrow-dropdown-circle"></ion-icon>
     <div class="portfolio-item  grid-2-equal">
         <div class="portfolio-img-container">
             <img class="portfolio-img" src="img/workout.jpg" alt="A screenshot of a workout tracker app created by Donna." />
@@ -47,6 +57,7 @@
             <p>This is a personal website I created, highlighting proficency with basic <strong>HTML</strong>, <strong>CSS</strong> and basic web design.  </p>
         </div>
     </div>
+    
  </section>
  <section class="section-skills">
     <div class="skills-grid">
@@ -61,10 +72,12 @@
         <div class="skill">
             <h2>Communication</h2>
             <p>Whether in a small group meeting, or in a large scientific conference, I am comfortable presenting ideas clearly and succinctly. </p></div>
-        <div class="skill skill-contact">
+        <a href="mailto:abc@example.com" class="mail-link">
+          <div class="skill skill-contact">
             <h2>Contact Me</h2>
             <p >donna.ann.kunkel@gmail.com</p>
-        </div>
+          </div>
+        </a>
         <div class="skill">
             <h2>Databases</h2>
             <p>Experience with storing, downloading and transforming data from databases, such as Firebase.</p>
@@ -75,7 +88,9 @@
         </div>
         <div class="skill">
             <h2>Repositories</h2>
-            <p>Experience with Git and BitBucket.  Check out my code here!</p>
+            <p>Experience with Git and BitBucket.  Check out my code here!
+                https://github.com/donna-ann-kunkel
+            </p>
         </div>
         <div class="skill">
             <h2>React</h2>
