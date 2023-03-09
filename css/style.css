@@ -116,8 +116,8 @@ background-position: center;
 
 .portfolio-img{
     width:100%;
-   
-    border-radius:15rem;
+    border-radius:2rem;
+    border:#011627 solid 1rem;
 }
 
 .portfolio-text{
